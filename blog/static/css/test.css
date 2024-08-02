@@ -1,0 +1,268 @@
+/*модифицируем карточки*/
+
+
+.js-store-grid-cont.t-store__grid-cont_col-width_stretch[data-col-gap="0"]:not(.t-store__grid-cont_indent) {
+    border-top: 1px dotted #7B7B7B;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.t-store__card {
+    border: 1px dotted #7B7B7B;
+}
+
+.js-product .t-product__option-variants_buttons .t-product__option-input:checked + .t-product__option-checkmark_color::before,
+.t-store .t-product__option-title{
+    display: none;
+}
+
+.t-store__prod-snippet__container {
+    padding-top: 0;
+}
+
+.t-btn {
+    display: inline-block;
+    font-family: 'CHRV', Arial, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px !important;
+    letter-spacing: 0.4px;
+    width: 90%;
+    height: 45px;
+}
+
+.t-descr_xxs {
+    font-size: 13px;
+    letter-spacing: 0.1px;
+}
+
+.t706__sidebar-content {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(235, 235, 235) !important;
+    max-width: 50% !important;
+}
+
+.t-store__prod-popup__sku {
+    margin-top: 4px;
+    color: #777;
+    font-size: 10px !important;
+    letter-spacing: 0.4px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.t-store__card__sku {
+    display: none;
+}
+
+@media screen and (min-width: 981px) {
+    .t-rec#rec779915864 {
+        padding-bottom: 110px !important;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .t-store__relevants__container .t-store__scroll-icon-wrapper {
+        padding: 0 0 20px 0;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    /*уберем отступ между карточками в мобилке*/
+    .t-store__grid-cont .t-col, .t-store__grid-cont .t-store__stretch-col {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 561px) {
+    .t-popup .t-popup__container .t-store__prod-popup__btn-wrapper-fixed,
+    .t-store__product-snippet .t-store__prod-popup__btn-wrapper-fixed {
+        position: fixed;
+        z-index: 10;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        background: transparent;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, .00);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .t-store .t-slds__thumbsbullet-wrapper {
+        width: calc(100% - 40px);
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .t-rec_pb_60 {
+        padding-bottom: 0px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .t-store__relevants__title {
+        margin: 80px 0 20px;
+        font-size: 18px !important;
+    }
+}
+
+/*доработка 01.08.2024*/
+
+.t-store__card__textwrapper {
+    padding: 10px;
+    border-top: 1px dotted #7B7B7B;
+}
+
+@media (min-width: 500px) {
+    .t-store__card__textwrapper {
+        padding: 20px 10px 20px 10px;
+    }
+}
+
+/*покажем цвет*/
+.js-product-controls-wrapper {
+    display: inline-block !important;
+}
+
+/*уберем слово текст в каталоге, нужно открыть в карточке*/
+.js-product-edition-option-name.t-product__option-title {
+    display: none !important;
+}
+
+/*пока все для общего каталога*/
+.js-product .t-product__option-variants_buttons .t-product__option-checkmark_color {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-top: 0;
+    border: 1px solid #7b7b7b;
+}
+
+
+.js-product-edition-option.t-product__option {
+    margin-top: 0;
+}
+
+/*градиент в multicolor */
+label:has([value="multicolor"]) .t-product__option-checkmark_color,
+label:has([name="multicolor"]) .t-checkbox__indicator {
+    background: linear-gradient(270deg, #C1C1C0 41.5%, #88BAD2 100%);
+    transform: rotate(89.84deg);
+}
+
+.t-store__relevants-grid-cont > div {
+    margin: 0;
+}
+
+@media screen and (max-width: 640px) {
+    .t-store__grid-cont_mobile-one-row .t-col, .t-store__grid-cont_mobile-one-row .t-store__stretch-col, .t-store__relevants-grid-cont.t-store__grid-cont_mobile-one-row .t-col, .t-store__relevants-grid-cont.t-store__grid-cont_mobile-one-row .t-store__stretch-col {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .t-store__relevants-grid-cont.t-store__valign-buttons.t-store__grid-cont_mobile-one-row {
+        width: 100vw;
+        justify-content: center;
+    }
+}
+
+.t-store__relevants__container .t-container,
+.t-store__relevants__container .t-container .t-col {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.t-store__relevants__container .t-container .t-col .t-store__relevants__title {
+    margin-left: 20px;
+}
+
+.t706__bubble {
+    display: none;
+}
+
+
+.t-store .js-product.t-align_center .js-product-controls-wrapper .t-product__option, .t-store .js-store-product .t-store__prod-popup__info.t-align_center .js-product-controls-wrapper .t-product__option {
+    align-items: center;
+}
+
+/* смотрите еще */
+.t-store__relevants__container > div:nth-child(1) {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 640px) {
+    .t-store__relevants__container .t-store__grid-cont_mobile-one-row.t-store__relevants-grid-cont .t-store__card {
+        max-width: 100%;
+        flex: 1 0 20%
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    #rec779915864 [data-elem-id="1722332905619"] {
+        width: 20px !important;
+    }
+}
+
+.t-store__grid-cont_mobile-one-row.t-store__relevants-grid-cont .t-store__card {
+    max-width: 25% !important;
+}
+
+.t-store__card__textwrapper {
+    padding: 10px 10px 0 10px;
+    border-top: 1px dotted #7B7B7B;
+}
+
+.t-store__card__price-wrapper {
+    margin-top: 0;
+}
+
+@media (min-width: 500px) {
+    .t-store__card__textwrapper {
+        padding: 20px 10px 5px 10px;
+    }
+    .t-store__card__price-wrapper {
+        margin-top: 12px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .js-product.t-store__card.t-col.t-col_3.t-align_center.js-product-relevant.t-item:nth-child(n+2) {
+        border-left: none;
+    }
+
+    .js-product.t-store__card.t-col.t-col_3.t-align_center.js-product-relevant.t-item.t-col {
+        box-sizing: initial;
+    }
+}
+
+@media (min-width: 961px) {
+    .js-product.t-store__card.t-col.t-col_3.t-align_center.js-product-relevant.t-item:nth-child(1n+5) {
+        border-top: none;
+    }
+
+    .js-product.t-store__card.t-col.t-col_3.t-align_center.js-product-relevant.t-item:nth-child(1n+2):not(.js-product.t-store__card.t-col.t-col_3.t-align_center.js-product-relevant.t-item:nth-child(6n)) {
+        border-left: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .t-store__relevants__container .t-container .t-col .t-store__relevants__title {
+        margin-left: 20px;
+        font-size: 25px !important;
+        text-align: center;
+    }
+}
